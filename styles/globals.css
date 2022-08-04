@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Jarkata Sans */
+@font-face {
+  font-family: "Plus Jakarta sans";
+  src: url(../fonts/PlusJakartaSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Plus Jakarata sansmedium-italic";
+  src: url(../fonts/PlusJakartaSans-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "Plus Jakarata sansmedium";
+  src: url(../fonts/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+  font-family: "Plus Jakarata Italic";
+  src: url(../fonts/PlusJakartaSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Plus Jakarata Bold";
+  src: url(../fonts/PlusJakartaSans-Bold.ttf);
+}
+
+.f-f-i {
+  font-family: "Inter", sans-serif;
+}
+.f-f-s
+{
+  font-family: "Plus Jakarta sans" ,sans-serif;
+}
+.f-f-s-mi
+{
+  font-family: "Plus Jakarata sansmedium-italic" ,sans-serif;
+}
+.f-f-s-i
+{
+  font-family: "Plus Jakarata Italic" ,sans-serif;
+}
+.f-f-s-b
+{
+  font-family: "Plus Jakarata Bold" ,sans-serif;
+}
+.f-f-s-m
+{
+  font-family: "Plus Jakarata sansmedium" ,sans-serif;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* body{
+  background-color: #0B0D13;
+} */
+
+.colorText{
+  background: linear-gradient(90.35deg, #5364FF  22.51%, #E964FF 92.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.colorText{
+  background: linear-gradient(90.35deg, #5364FF  22.51%, #E964FF 92.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.colorCareer{
+background: linear-gradient(88.76deg, #5364FF 0.26%, #E964FF 91.1%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.textColor{
+  background: linear-gradient(120deg, #E964FF 22.51%, #5364FF  92.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient {
+  background-image: linear-gradient(60deg,  #E964FF, #5364FF);
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-color {
+  background: linear-gradient(90deg, #D677EE 0%, #5D93E4 100%);
+
+}
+
+.gradient1 {
+  background: linear-gradient(90deg, rgba(233,100,255,1) 24%, rgba(83,100,255,1) 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 5px;
+}
+
+.bg-header{
+  background: rgba(11, 13, 19, 0.1);
+backdrop-filter: blur(30px);
+}
+.bg-casestudy-header{
+  background: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(30px);
+}
+
+.marquee
+{
+  min-width: 91% !important;
+}
+
+.aboutTextColor
+{
+  background: linear-gradient(269.29deg, #5364FF 26.45%, #E964FF 99.88%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.bg-grad{
+  background: linear-gradient(90.53deg, #7518EC 24.65%, #18AFEC 76.47%), #FFFFFF;
+}
+.bg-image
+{
+  background-image: url(/assets/images/products/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.text-grad
+{
+  background: linear-gradient(90.16deg, #A2FACF 0.03%, #64ACFF 99.58%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.amazing
+{
+  background: linear-gradient(90deg, #E964FF 0%, #5364FF 42.01%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.grid-items{
+ 
+      display: grid;
+      grid-template-columns: min-content;
+     
+        grid-template-rows:  min-content;
+      
+      box-sizing: border-box;
+      height: 200px;
+      width: 100%;
+      background-color: #8cffa0;
+      padding: 10px;
+
+}
+.Alpha {
+  background: linear-gradient(89.59deg, #4F8FEF 16.76%, rgba(164, 66, 241, 0.7) 68.26%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
