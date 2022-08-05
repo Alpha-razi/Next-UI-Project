@@ -1,6 +1,6 @@
 export default function OurImpact() {
   return (
-    <div className="bg-white relative overflow-hidden ">
+    <div className="bg-white relative overflow-hidden">
       <div className="border-zinc-200 border-y pt-12 lg:pb-12 sm:pb-8 pb-6 ">
         <div className="2xl:px-0 xl:px-20 sm:px-6 px-4  xl:max-w-[1280px] mx-auto container">
           <h2 className=" xl:text-[60px] lg:text-[50px] lg:leading-[60px] text-[30px] leading-[30px]  f-f-s text-zinc-800">
@@ -18,10 +18,10 @@ export default function OurImpact() {
           </p>
         </div>
         <div className="border-zinc-200 border-l xl:h-[945px] lg:h-[1000px] lg:block hidden"></div>
-        <div className="lg:w-[60%] ">
-          <div className="lg:flex  w-full  ">
+        <div className="lg:w-[60%]">
+          <div className="lg:flex  w-full">
            
-            <div className=" lg:py-32 sm:py-14 py-8  lg:px-14  border-zinc-200 lg:border-r lg:max-w-[55%]  lg:border-b-0 border-b  ">
+            <div className=" lg:py-32 sm:py-14 py-8  lg:px-14  border-zinc-200 lg:border-r lg:max-w-[55%]  lg:border-b-0 border-b ">
               <div className="lg:max-w-[303px] lg:space-y-8 space-y-4">
                 <h2 className=" lg:text-[42px]  lg:leading-[60px] text-[24px] leading-[24px]  f-f-s text-zinc-600">
                   Helping Humanity

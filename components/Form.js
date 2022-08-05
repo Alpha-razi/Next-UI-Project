@@ -2,23 +2,31 @@ import React,{useRef} from "react";
 const Form = () => {
   const hiddenFileInput = useRef(null);
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault()
   };
-
+   
   const handleClick = event => {
     event.preventDefault();
     hiddenFileInput.current.click();
 };
-const handleButton = (e) =>{
- e.preventDefault()
+
+const handleChange = event => {
+  const fileUploaded = event.target.files[0];
+};
+
+const handleButton = e =>{
+  e.preventDefault()
 }
+
+
 
   return (
     <div className="mx-auto xl:max-w-[842px] 2xl:px-0 xl:px-20 md:px-6 px-4 pt-8 sm:pt-12 lg:pt-16 ">
       <h2 className=" text-2xl sm:text-xl lg:text-[28px] leading-6 sm:leading-5 lg:leading-[22px] text-zinc-800 sm:text-zinc-900 font-normal f-f-s  pb-9 lg:pb-10 ">
         Application form
       </h2>
-      <form className="max-w-[842px]" onSubmit={onSubmit}>
+      <form  className="max-w-[842px]" >
         <div className="text-base sm:text-lg leading-4 sm:leading-[18px] text-zinc-500 font-normal f-f-s pb-9 lg:pb-8">
           <input
             className="w-full outline-none border-b border-zinc-300 pb-[18px] lg:pb-4"
@@ -63,6 +71,7 @@ const handleButton = (e) =>{
           </div>  
           <input
             ref={hiddenFileInput}
+            onChange={handleChange}
             style={{display:'none'}}
             className="w-full flex justify-center outline-none py-8 items-center"
             type="file"
@@ -71,7 +80,7 @@ const handleButton = (e) =>{
 
         <div className="flex justify-end pt-12 sm:pt-12 lg:pt-[56px]  pb-8 sm:pb-12 lg:pb-16">
           <div className="w-full sm:w-[122px] flex justify-center sm:justify-between bg-zinc-800 rounded-3xl py-3 px-6 space-x-[10px] ">
-            <button onClick={(e)=> {handleButton}} className="text-base sm:text-lg leading-4 sm:leading-[18px] text-white font-normal f-f-s">Send</button>
+            <button onClick={handleButton} type="submit" className="text-base sm:text-lg leading-4 sm:leading-[18px] text-white font-normal f-f-s">Send</button>
             <svg
               width={18}
               height={18}

@@ -1,11 +1,9 @@
-import React from "react";
+import React,{useContext} from "react";
 import Button from "./Button/button";
-import Cursor from "../components/cursor/cursor";
-import LCursor from "./linkcursor/linkcursor";
-import useHover from "../utills/useHover";
+import { AppContext } from '../components/ContextApi/context';
 
 const Services = () => {
-  const [hoverRef, isHovered] = useHover();
+  const { hoverRef } = useContext(AppContext);
   return (
     <>
       <div className=" bg-white">
@@ -29,7 +27,6 @@ const Services = () => {
               <Button ref={hoverRef} onClick={() => console.log("clicked")}>
                 About Us
               </Button>
-              <Cursor hover={isHovered} />
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ export default function OurTeam() {
     <div className="bg-white">
       <div className="border-zinc-200 border-b pt-12 lg:pb-12 sm:pb-8 pb-6 ">
         <div className="2xl:px-0 xl:px-20 sm:px-6 px-4  xl:max-w-[1280px] mx-auto container">
-          <h2 className=" xl:text-[60px] lg:text-[50px] lg:leading-[60px] text-[30px] leading-[30px]  f-f-s text-zinc-800">
+          <h2 className="xl:text-[60px] lg:text-[50px] lg:leading-[60px] text-[30px] leading-[30px]  f-f-s text-zinc-800">
             Our A-Team
           </h2>
         </div>

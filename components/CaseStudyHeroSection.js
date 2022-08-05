@@ -1,11 +1,15 @@
+import React,{useContext} from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "./Button/buttonVisit";
-import Cursor from "../components/cursor/cursor";
-import useHover from "../utills/useHover";
+// import Cursor from "../components/cursor/cursor";
+// import useHover from "../utills/useHover";
+import { AppContext } from '../components/ContextApi/context';
+
 
 export default function CaseStudyHeroSection({ data, services, nysservices }) {
-  const [hoverRef, isHovered] = useHover();
+  // const [hoverRef, isHovered] = useHover();
+  const { hoverRef } = useContext(AppContext);
   const router = useRouter();
   return (
     <>
@@ -38,7 +42,6 @@ export default function CaseStudyHeroSection({ data, services, nysservices }) {
                   <Button ref={hoverRef} onClick={() => console.log("clicked")}>
                     Visit Website
                   </Button>
-                  <Cursor hover={isHovered} />
               </div>
              
               

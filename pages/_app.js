@@ -4,9 +4,16 @@ import Layout from "../components/Layout";
 import  { ThemeProvider } from "styled-components";
 import { lightTheme } from "../components/theme/index";
 import { Normalize } from "styled-normalize";
+import useHover from "../utills/useHover";
+import Cursor from "../components/cursor/cursor";
+import { AppContext } from '../components/ContextApi/context';
 
 function MyApp({ Component, pageProps }) {
+
+  const [hoverRef, isHovered] = useHover();
+
   return (
+    <AppContext.Provider value={{hoverRef}}>
     <ThemeProvider theme={lightTheme}>
       <Normalize />
       <>
@@ -20,8 +27,10 @@ function MyApp({ Component, pageProps }) {
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        <Cursor hover={isHovered} />
       </>
-    </ThemeProvider> 
+    </ThemeProvider>
+    </AppContext.Provider> 
   );
 }
 
